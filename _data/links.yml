@@ -20,14 +20,14 @@ buttons:
       icon: bi:usb-drive-fill
       tag: live USB
       
-  - categroty: Misc
+  - category: Misc
     items:
     - title: iconify
       url: https://icon-sets.iconify.design/
       icon: simple-icons:iconify
       tag: icons
    
-#  - categroty:
+#  - category:
 #    items:
 #    - title:
 #      url: 
