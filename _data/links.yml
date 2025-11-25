@@ -26,6 +26,13 @@ buttons:
       url: https://icon-sets.iconify.design/
       icon: simple-icons:iconify
       tag: icons
+
+  - category: Education
+    items:
+    - title: Polypad
+      url: https://polypad.amplify.com/
+      icon: tabler:geometry
+      tag: math
    
 #  - category:
 #    items:
