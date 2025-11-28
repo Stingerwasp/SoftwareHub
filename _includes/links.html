@@ -8,11 +8,14 @@
             {% else %}
                 <div class="col is-center">
             {% endif %}
+            
+            {% assign tooltip_class = item.tooltip | default: "" %}
             {% if site.data.links.fixed-button-width == true %}
-                <a class="button outline secondary" style="width:50%" href="{{ item.url }}" target="_blank">
+                <a class="button outline secondary tooltip" style="width:50%" href="{{ item.url }}" target="_blank">
             {% else %}
-                <a class="button outline secondary" href="{{ item.url }}" target="_blank">
+                <a class="button outline secondary tooltip" href="{{ item.url }}" target="_blank">
             {% endif %}
+            
             {% if site.data.links.icon-position == "right" %}
                 {% if item.tag %}
                     <span class="tag is-small bd-success text-success" style="margin-right:.5em">{{ item.tag}}</span>
@@ -24,13 +27,12 @@
                 {% if item.custom-icon %}
                     <span class="custom-icon" style="margin-left:.5em">{{ item.custom-icon }}</span>
                 {% endif %}
-                </a>
             {% else %}
                 {% if item.icon %}
-                <span class="iconify-inline" data-icon="{{ item.icon }}"></span>
+                    <span class="iconify-inline" data-icon="{{ item.icon }}"></span>
                 {% endif %}
                 {% if item.custom-icon %}
-                <span class="custom-icon" style="margin-right:.5em">{{ item.custom-icon}}</span>
+                    <span class="custom-icon" style="margin-right:.5em">{{ item.custom-icon}}</span>
                 {% endif %}
                 {{ item.title }}
                 {% if item.tag %}
@@ -39,9 +41,14 @@
                 {% if item.tag2 %}
                     <span class="tag is-small bd-success text-success" style="margin-left:.5em">{{ item.tag2 }}</span>
                 {% endif %}
-                </a>
             {% endif %}
-                </div>
+
+            {% if item.tooltip %}
+                <span class="tooltip-text">{{ item.tooltip }}</span>
+            {% endif %}
+
+            </a>
+            </div>
             </div>
         {% endfor %}
     {% endfor %}

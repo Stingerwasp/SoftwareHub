@@ -8,6 +8,7 @@ buttons:
       icon: fluent:toolbox-32-filled
       tag: email
       tag2: IP
+      tooltip: "Email and Network Tools"
       
     - title: DNS checker
       url: https://dnschecker.org/
