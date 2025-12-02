@@ -138,7 +138,9 @@ img {
 }
 
 .button:hover {
-    opacity: 1
+    opacity: 1;
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02)
 }
 
 .button.secondary {
