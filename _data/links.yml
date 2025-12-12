@@ -53,6 +53,12 @@ buttons:
       icon: streamline-ultimate:programming-book-bold
       tag: code
       tag2: cheatsheet
+
+    - title: Musicca
+      url: https://www.musicca.com/pl
+      icon: mdi:music-clef-treble
+      tag: Music
+      tag2: Instruments
    
 #  - category:
 #    items:
