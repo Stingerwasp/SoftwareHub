@@ -47,6 +47,13 @@ buttons:
       icon: tabler:geometry
       tag: math
       tag2: geometry
+    
+    - title: QuickRef.me
+      url: https://quickref.me/
+      icon: streamline-ultimate:programming-book-bold
+      icon: tabler:geometry
+      tag: code
+      tag2: cheatsheet
    
 #  - category:
 #    items:
